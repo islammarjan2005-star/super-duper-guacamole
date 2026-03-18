@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #0a0a0a;
+  --color-surface-card: #141414;
+  --color-surface-hover: #1e1b17;
+  --color-text-primary: #f0ede6;
+  --color-text-muted: #9a9587;
+  --color-amber: #c4963a;
+  --color-amber-dim: #3d3830;
+  --color-border: #2a2520;
+  --font-family-amiri: "Amiri", serif;
+  --font-family-inter: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #0a0a0a;
+  color: #f0ede6;
+  font-family: "Inter", sans-serif;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #141414 25%, #1e1b17 50%, #141414 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2520;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3d3830;
+}
